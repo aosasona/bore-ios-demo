@@ -1,0 +1,8 @@
+framework module "Bore" {
+	header "ref.h"
+    header "Boredemo.objc.h"
+    header "Universe.objc.h"
+    header "Bore.h"
+
+    export *
+}
