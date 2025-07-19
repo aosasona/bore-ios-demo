@@ -4,7 +4,7 @@ go = "1.24.5"
 [tasks."build"]
 description = "Build xcframework for iOS using gomobile"
 run = [
-	"go get golang.org/x/mobile/cmd/gomobile",                                    # `go mod tidy` keeps removing gomobile
-	"gomobile bind -o ./Bore.xcframework -target=ios,iossimulator -ldflags=-w .",
+	"go get golang.org/x/mobile/cmd/gomobile",                                                      # `go mod tidy` keeps removing gomobile
+	"gomobile bind -o ./BoreDemo/BoreDemo/Bore.xcframework -target=ios,iossimulator -ldflags=-w .",
 ]
 dir = "."
